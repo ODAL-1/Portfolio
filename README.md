@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Alan García — Portfolio
 
 Sitio de portafolio estático (HTML · CSS · JS, sin frameworks), listo para GitHub Pages.
@@ -54,3 +55,7 @@ pnpm dev
 
 El archivo `.nojekyll` asegura que GitHub sirva los archivos tal cual,
 sin pasar por Jekyll.
+=======
+# Portfolio
+Mi portfolio personal.
+>>>>>>> b427aa416a736ce8b85b008c17ab4c9dc54b4276
