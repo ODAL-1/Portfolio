@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0f14" />
+    <meta
+      name="description"
+      data-i18n="meta.description"
+      content="Alan García — Junior Developer e IT Support Analyst en Montevideo. Construyendo soluciones a partir de problemas reales en entornos IT."
+    />
+    <title data-i18n="meta.title">Alan García · Junior Developer & IT Support Analyst</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Atmospheric background layers -->
+    <div class="bg-noise" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-vignette" aria-hidden="true"></div>
+
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#hero" class="nav__brand" aria-label="Alan García — Inicio">
+          <span class="nav__brand-mark" aria-hidden="true">A.G</span>
+          <span class="nav__brand-name">Alan&nbsp;García</span>
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+          <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+          <a href="#about" data-i18n="nav.about">Sobre mí</a>
+          <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+          <a href="#stack" data-i18n="nav.stack">Stack</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <button
+          id="lang-toggle"
+          class="lang-toggle"
+          type="button"
+          aria-label="Cambiar idioma / Switch language"
+        >
+          <span class="lang-toggle__option" data-lang="es">ES</span>
+          <span class="lang-toggle__divider" aria-hidden="true">/</span>
+          <span class="lang-toggle__option" data-lang="en">EN</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="hero__eyebrow reveal">
+              <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+              <span data-i18n="hero.eyebrow">Montevideo, Uruguay · Open to remote / EU opportunities</span>
+            </p>
+
+            <h1 class="hero__title reveal">
+              <span class="hero__name">Alan García</span>
+            </h1>
+
+            <p class="hero__role reveal">
+              <span data-i18n="hero.role1">Junior Developer</span>
+              <span class="hero__sep" aria-hidden="true">·</span>
+              <span data-i18n="hero.role2">IT Support Analyst</span>
+            </p>
+
+            <p class="hero__desc reveal" data-i18n="hero.desc">
+              Construyo aplicaciones web mantenibles con Angular, TypeScript
+              y Node.js — pensadas para resolver problemas reales en
+              entornos IT y escalar sin romperse.
+            </p>
+
+            <div class="hero__cta reveal">
+              <a href="#projects" class="btn btn--primary" data-i18n="hero.cta1">
+                Explorar proyectos
+              </a>
+              <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">
+                Contactar
+              </a>
+            </div>
+
+            <div class="hero__meta reveal">
+              <span class="hero__meta-dot" aria-hidden="true"></span>
+              <span class="hero__meta-text" data-i18n="hero.meta">
+                Disponible para roles junior · open to remote · listo para aportar desde el primer día
+              </span>
+            </div>
+          </div>
+
+          <!-- App preview — Nueva Visión real screenshot -->
+          <aside class="hero__preview reveal" aria-label="Vista previa de Nueva Visión">
+            <a
+              class="app-mock"
+              href="#nueva-vision"
+              aria-label="Ir al proyecto Nueva Visión"
+            >
+              <!-- Window chrome -->
+              <header class="app-mock__chrome">
+                <div class="app-mock__dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="app-mock__url" aria-hidden="true">
+                  <span class="app-mock__lock">●</span>
+                  <span>nuevavision.app/ordenes/nueva</span>
+                </div>
+                <div class="app-mock__tag" aria-hidden="true" data-i18n="hero.preview.tag">
+                  Caso real
+                </div>
+              </header>
+
+              <!-- Real app screenshot -->
+              <div class="app-mock__shot">
+                <img
+                  src="./assets/nueva-vision.png"
+                  alt="Captura del panel de Nueva Visión — pantalla de Nueva orden"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </a>
+
+            <!-- Floating tech labels -->
+            <span class="hero__chip hero__chip--ng" aria-hidden="true">Angular</span>
+            <span class="hero__chip hero__chip--ts" aria-hidden="true">TypeScript</span>
+            <span class="hero__chip hero__chip--node" aria-hidden="true">Node.js</span>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PROJECTS (moved up) -->
+      <section id="projects" class="section">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="section__index">01</span>
+            <h2 class="section__title" data-i18n="projects.title">
+              Proyectos
+            </h2>
+            <span class="section__line" aria-hidden="true"></span>
+          </header>
+
+          <p class="section__lead reveal" data-i18n="projects.lead">
+            Trabajo seleccionado. Aplicaciones reales y experimentos enfocados
+            en interfaces mantenibles y arquitectura clara.
+          </p>
+
+          <!-- Featured project: Nueva Visión -->
+          <article class="project-featured reveal" id="nueva-vision">
+            <div class="project-featured__meta">
+              <span class="project-featured__tag" data-i18n="projects.featured.tag">
+                Proyecto destacado
+              </span>
+              <span class="project-featured__year">2024 — 2025</span>
+            </div>
+
+            <h3 class="project-featured__title">Nueva Visión</h3>
+
+            <p class="project-featured__subtitle" data-i18n="projects.nv.subtitle">
+              Sistema de gestión interna con módulos de inventario, órdenes y facturación.
+            </p>
+
+            <p class="project-featured__desc" data-i18n="projects.nv.desc">
+              Aplicación web desarrollada con Angular, enfocada en gestión
+              interna, autenticación, consumo de APIs y arquitectura modular.
+            </p>
+
+            <ul class="project-featured__stack" aria-label="Stack">
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>SCSS</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+            </ul>
+
+            <div class="project-featured__cta">
+              <a
+                class="btn btn--primary"
+                href="https://nueva-vision-frontend.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.nv.demo"
+              >
+                Ver Demo
+              </a>
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/ODAL-1/NuevaVision-Frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="projects.nv.frontend">Frontend</span>
+                <span class="btn__sep" aria-hidden="true">·</span>
+                <span>Ver repositorio en GitHub</span>
+              </a>
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/ODAL-1/NuevaVision-Backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="projects.nv.backend">Backend</span>
+                <span class="btn__sep" aria-hidden="true">·</span>
+                <span>Ver repositorio en GitHub</span>
+              </a>
+            </div>
+
+            <div class="project-featured__corner" aria-hidden="true"></div>
+          </article>
+
+          <!-- Secondary projects -->
+          <div class="projects-secondary" id="projects-grid">
+            <!-- Cards rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="section__index">02</span>
+            <h2 class="section__title" data-i18n="about.title">Sobre mí</h2>
+            <span class="section__line" aria-hidden="true"></span>
+          </header>
+
+          <div class="about reveal">
+            <figure class="about__photo" aria-label="Alan García">
+              <div class="about__photo-frame">
+                <img
+                  src="./assets/alan.png"
+                  alt="Alan García — retrato profesional"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption class="about__photo-tag">Alan García · MVD</figcaption>
+            </figure>
+
+            <div class="about__copy">
+              <p data-i18n="about.p1">
+                Trabajé como Analista Help Desk L1 en Banco República (vía SONDA)
+                y como Analista en Ciberseguridad, gestionando incidencias,
+                Active Directory, soporte remoto y diagnóstico en entornos
+                corporativos exigentes.
+              </p>
+              <p data-i18n="about.p2">
+                Hoy realizo una transición sólida hacia desarrollo web, con foco
+                en Angular, TypeScript y la construcción de aplicaciones
+                mantenibles. Vengo de IT Support: sé diagnosticar, comunicar
+                técnico-funcional y resolver bajo presión.
+              </p>
+              <p data-i18n="about.p3">
+                Busco roles junior donde combinar criterio técnico, disciplina
+                operativa y aprendizaje continuo en producto real.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="section__index">03</span>
+            <h2 class="section__title" data-i18n="experience.title">
+              Experiencia
+            </h2>
+            <span class="section__line" aria-hidden="true"></span>
+          </header>
+
+          <ol class="timeline" aria-label="Experiencia profesional">
+            <li class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__date">12/2024 — 04/2025</div>
+              <h3 class="timeline__role" data-i18n="exp.nv.role">
+                Desarrollador AngularJS (Proyecto)
+              </h3>
+              <div class="timeline__company">Óptica Nueva Visión</div>
+              <p class="timeline__desc" data-i18n="exp.nv.desc">
+                Desarrollo y mantenimiento de aplicación web. Implementación de
+                interfaces con Angular, consumo de APIs e integración con
+                backend.
+              </p>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__date">09/2024 — 01/2025</div>
+              <h3 class="timeline__role" data-i18n="exp.cyber.role">
+                Analista en Ciberseguridad
+              </h3>
+              <div class="timeline__company">Ventanas Venterra</div>
+              <p class="timeline__desc" data-i18n="exp.cyber.desc">
+                Monitoreo y gestión básica de incidentes. Soporte en seguridad
+                de sistemas.
+              </p>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__date">08/2023 — 08/2024</div>
+              <h3 class="timeline__role" data-i18n="exp.helpdesk.role">
+                Analista Help Desk L1
+              </h3>
+              <div class="timeline__company">Banco República / SONDA</div>
+              <p class="timeline__desc" data-i18n="exp.helpdesk.desc">
+                Soporte técnico a usuarios en entorno corporativo. Gestión de
+                incidencias y troubleshooting. Active Directory y herramientas
+                remotas.
+              </p>
+            </li>
+
+            <li class="timeline__item reveal">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__date">
+                02/2020 —
+                <span data-i18n="exp.present">presente</span>
+              </div>
+              <h3 class="timeline__role" data-i18n="exp.freelance.role">
+                Soporte Técnico — Freelance
+              </h3>
+              <div class="timeline__company">Montevideo, Uruguay</div>
+              <p class="timeline__desc" data-i18n="exp.freelance.desc">
+                Diagnóstico y reparación de equipos. Soporte a usuarios
+                particulares y empresas.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- STACK -->
+      <section id="stack" class="section">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="section__index">04</span>
+            <h2 class="section__title" data-i18n="stack.title">
+              Stack
+            </h2>
+            <span class="section__line" aria-hidden="true"></span>
+          </header>
+
+          <div class="stack-wrap reveal">
+            <div class="stack-block">
+              <h3 class="stack-block__title" data-i18n="stack.frontend">
+                Frontend
+              </h3>
+              <ul class="stack-list stack-list--primary">
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML / CSS / SCSS</li>
+              </ul>
+            </div>
+
+            <div class="stack-block">
+              <h3 class="stack-block__title" data-i18n="stack.backend">
+                Backend
+              </h3>
+              <ul class="stack-list stack-list--primary">
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL (MySQL)</li>
+              </ul>
+            </div>
+
+            <div class="stack-block">
+              <h3 class="stack-block__title" data-i18n="stack.tools">
+                Herramientas y Sistemas
+              </h3>
+              <ul class="stack-list">
+                <li>Active Directory</li>
+                <li data-i18n="stack.tools.windows">
+                  Windows (diagnóstico y resolución de incidencias)
+                </li>
+                <li data-i18n="stack.tools.remote">Soporte remoto</li>
+                <li>Bantotal</li>
+                <li data-i18n="stack.tools.bash">Bash scripting</li>
+              </ul>
+            </div>
+
+            <div class="stack-block">
+              <h3 class="stack-block__title" data-i18n="stack.education">
+                Formación
+              </h3>
+              <ul class="stack-edu">
+                <li>
+                  <span class="stack-edu__title" data-i18n="edu.utu.title">
+                    Tecnólogo en Informática
+                  </span>
+                  <span class="stack-edu__sub">UTU · 2026 →</span>
+                </li>
+                <li>
+                  <span class="stack-edu__title" data-i18n="edu.bach.title">
+                    Bach. Tecnológico — Desarrollo Web
+                  </span>
+                  <span class="stack-edu__sub">UTU · 2018 — 2023</span>
+                </li>
+                <li>
+                  <span class="stack-edu__title">C1 Advanced Certificate</span>
+                  <span class="stack-edu__sub" data-i18n="edu.c1.sub">
+                    Inglés profesional
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section section--contact">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="section__index">05</span>
+            <h2 class="section__title" data-i18n="contact.title">Contacto</h2>
+            <span class="section__line" aria-hidden="true"></span>
+          </header>
+
+          <div class="contact reveal">
+            <h3 class="contact__cta" data-i18n="contact.cta">
+              ¿Interesado en contactar conmigo?
+            </h3>
+            <p class="contact__lead" data-i18n="contact.lead">
+              Estoy abierto a oportunidades junior, proyectos reales y
+              colaboración.
+            </p>
+
+            <div class="contact__links">
+              <a
+                class="contact__link"
+                href="mailto:Alang2921@Gmail.com"
+                aria-label="Email"
+              >
+                <span class="contact__link-label">Email</span>
+                <span class="contact__link-value">Alang2921@Gmail.com</span>
+                <span class="contact__link-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a
+                class="contact__link"
+                href="https://github.com/ODAL-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <span class="contact__link-label">GitHub</span>
+                <span class="contact__link-value">github.com/ODAL-1</span>
+                <span class="contact__link-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a
+                class="contact__link"
+                href="https://www.linkedin.com/in/alangarciahsr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <span class="contact__link-label">LinkedIn</span>
+                <span class="contact__link-value">/in/alangarciahsr</span>
+                <span class="contact__link-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__copy">
+          © <span id="year"></span> Alan García.
+          <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+        </span>
+        <span class="footer__build" data-i18n="footer.build">
+          HTML · CSS · JS — sin frameworks
+        </span>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
