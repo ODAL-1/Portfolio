@@ -1,61 +1,67 @@
-<<<<<<< HEAD
 # Alan García — Portfolio
 
-Sitio de portafolio estático (HTML · CSS · JS, sin frameworks), listo para GitHub Pages.
+Portfolio personal enfocado en desarrollo frontend y soluciones reales en entornos IT.
+
+🔗 Live: https://odal-1.github.io/Portfolio/
+
+---
+
+## Descripción
+
+Sitio web estático desarrollado sin frameworks, diseñado para mostrar proyectos reales, habilidades técnicas y transición profesional desde IT Support hacia desarrollo.
+
+El enfoque está en claridad, mantenibilidad y experiencia visual cuidada.
+
+---
+
+## Tecnologías
+
+- HTML5
+- CSS3 (custom design system)
+- JavaScript (vanilla)
+- GitHub Pages (deploy)
+
+---
+
+## Características
+
+- Diseño oscuro, técnico y moderno
+- Soporte bilingüe (ES / EN)
+- Sistema de componentes reutilizables
+- Animaciones sutiles orientadas a UX
+- Estructura simple y mantenible
+
+---
+
+## Proyectos destacados
+
+### Nueva Visión
+Sistema de gestión interna para óptica.
+
+- Angular · TypeScript · SCSS
+- Arquitectura modular
+- Autenticación y consumo de API
+
+---
 
 ## Estructura
-
-```
 .
-├── index.html      # Página principal
-├── styles.css      # Estilos (paleta fría: azul / violeta / cyan)
-├── script.js       # i18n ES/EN, animaciones, render de proyectos
+├── index.html
+├── styles.css
+├── script.js
 ├── assets/
-│   └── alan.jpg    # Foto personal (colocá tu foto aquí)
-├── .nojekyll       # Evita que GitHub Pages use Jekyll
-└── package.json    # Solo para servir localmente con `serve`
-```
+└── .nojekyll
 
-## Desarrollo local
+
+
+---
+
+## Ejecución local
+
+Abrir directamente:
 
 ```bash
-pnpm install
-pnpm dev
-# abre http://localhost:3000
+index.html
 ```
 
-> También podés abrir `index.html` directamente en el navegador.
-
-## Personalización
-
-1. **Foto**: colocá tu retrato profesional en `assets/alan.jpg`
-   (cuadrado, ~640×640 px). Si no existe, se muestra un placeholder.
-2. **Proyectos**: edita el array `secondaryProjects` en `script.js`
-   y la sección "Nueva Visión" en `index.html` (`#nueva-vision`).
-3. **Textos ES / EN**: edita el objeto `translations` en `script.js`.
-4. **Colores / tipografía**: edita las variables `:root` en `styles.css`.
-
-## Despliegue en GitHub Pages
-
-1. Subí esta carpeta a un repo en GitHub:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/ODAL-1/portfolio.git
-   git push -u origin main
-   ```
-
-2. En GitHub: **Settings → Pages → Source: Deploy from a branch → main / root**.
-3. Esperá 1–2 minutos. Tu sitio estará disponible en
-   `https://ODAL-1.github.io/portfolio/` (o `https://ODAL-1.github.io/`
-   si el repo se llama `ODAL-1.github.io`).
-
-El archivo `.nojekyll` asegura que GitHub sirva los archivos tal cual,
-sin pasar por Jekyll.
-=======
-# Portfolio
-Mi portfolio personal.
->>>>>>> b427aa416a736ce8b85b008c17ab4c9dc54b4276
+npx serve
