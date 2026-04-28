@@ -44,18 +44,6 @@ Sistema de gestión interna para óptica.
 
 ---
 
-## Estructura
-.
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-└── .nojekyll
-
-
-
----
-
 ## Ejecución local
 
 Abrir directamente:
