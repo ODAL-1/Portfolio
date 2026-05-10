@@ -1,16 +1,10 @@
 /* =========================================================
    Alan García · Portfolio — script.js
-   - i18n bilingüe ES/EN sin recargar
-   - Reveal on scroll
-   - Render de proyectos secundarios
-   - Spotlight cursor en cards
-   - Sticky nav state
+
    ========================================================= */
 
 (() => {
-  // =========================================================
-  // i18n dictionary
-  // =========================================================
+
   const translations = {
     es: {
       // Meta
@@ -58,7 +52,6 @@
       "hero.preview.s1": "Pagado",
       "hero.preview.s2": "Pendiente",
 
-      // Projects section
       "projects.title": "Proyectos",
       "projects.lead":
         "Trabajo seleccionado. Aplicaciones reales y experimentos enfocados en interfaces mantenibles y arquitectura clara.",
@@ -111,7 +104,7 @@
 
       // Contact
       "contact.title": "Contacto",
-      "contact.cta": "¿Te interesa trabajar conmigo?",
+      "contact.cta": "¿Interesado en contactarme?",
       "contact.lead":
         "Estoy abierto a oportunidades junior, proyectos reales y colaboración.",
 
@@ -229,7 +222,7 @@
 
       // Contact
       "contact.title": "Contact",
-      "contact.cta": "Interested in working together?",
+      "contact.cta": "Interested in contacting me?",
       "contact.lead":
         "I'm open to junior opportunities, real projects and collaboration.",
 

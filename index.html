@@ -201,7 +201,7 @@
               >
                 <span data-i18n="projects.nv.frontend">Frontend</span>
                 <span class="btn__sep" aria-hidden="true">·</span>
-                <span>Ver repositorio en GitHub</span>
+                <span data-i18n="projects.nv.github">GitHub repo</span>
               </a>
               <a
                 class="btn btn--ghost"
@@ -211,18 +211,71 @@
               >
                 <span data-i18n="projects.nv.backend">Backend</span>
                 <span class="btn__sep" aria-hidden="true">·</span>
-                <span>Ver repositorio en GitHub</span>
+                <span data-i18n="projects.nv.github">GitHub repo</span>
               </a>
             </div>
 
             <div class="project-featured__corner" aria-hidden="true"></div>
           </article>
 
-          <!-- Secondary projects -->
-          <div class="projects-secondary" id="projects-grid">
-            <!-- Cards rendered by JS -->
-          </div>
+ <div class="projects-secondary">
+    <article class="project-card project-card--media reveal">
+        <div class="project-card__media">
+            <img src="./assets/sigd.png" alt="Preview S.I.G.D" loading="lazy" />
         </div>
+
+        <div class="project-card__body">
+            <div class="project-card__head">
+                <h4 class="project-card__title">S.I.G.D (Sprinet)</h4>
+            </div>
+
+            <p class="project-card__desc">
+                Sistema integral de gestión deportiva diseñado para centralizar información sobre múltiples disciplinas.
+            </p>
+
+            <ul class="project-card__stack">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+
+                  <div class="project-featured__cta">
+              <a
+                class="btn btn--primary"
+                href="https://nueva-vision-frontend.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.nv.demo"
+              >
+                Ver Demo
+              </a>
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/ODAL-1/NuevaVision-Frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="projects.nv.frontend">Frontend</span>
+                <span class="btn__sep" aria-hidden="true">·</span>
+                <span data-i18n="projects.nv.github">GitHub repo</span>
+              </a>
+              <a
+                class="btn btn--ghost"
+                href="https://github.com/ODAL-1/NuevaVision-Backend"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span data-i18n="projects.nv.backend">Backend</span>
+                <span class="btn__sep" aria-hidden="true">·</span>
+                <span data-i18n="projects.nv.github">GitHub repo</span>
+              </a>
+            </div>
+
+        </div>
+    </article>
+</div> 
       </section>
 
       <!-- ABOUT -->
@@ -410,7 +463,9 @@
                   <span class="stack-edu__sub">UTU · 2018 — 2023</span>
                 </li>
                 <li>
-                  <span class="stack-edu__title">C1 Advanced Certificate</span>
+                  <span class="stack-edu__title" data-i18n="edu.c1.title">
+                    Cambridge C1 Advanced Certificate
+                  </span>
                   <span class="stack-edu__sub" data-i18n="edu.c1.sub">
                     Inglés profesional
                   </span>

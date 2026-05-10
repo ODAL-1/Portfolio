@@ -1,18 +1,15 @@
-/* =========================================================
-   Alan García — Portfolio
-   Estética: gótica sutil · técnica · oscura · elegante
-   ========================================================= */
+
 
 :root {
-  /* Paleta — 7 tokens principales */
-  --bg:           #0b0f14;   /* fondo */
-  --surface:      #111827;   /* cards */
-  --surface-2:    #161f33;   /* superficie elevada */
-  --border:       #1f2a3d;   /* borde sutil */
+
+  --bg:           #0b0f14;   
+  --surface:      #111827;  
+  --surface-2:    #161f33; 
+  --border:       #1f2a3d;  
   --border-soft:  #161e2c;
-  --primary:      #7c8cff;   /* azul frío */
-  --accent:       #a78bfa;   /* violeta suave */
-  --highlight:    #22d3ee;   /* cyan sutil */
+  --primary:      #7c8cff;   
+  --accent:       #a78bfa;   
+  --highlight:    #22d3ee;   
   --text:         #e5e7eb;
   --text-muted:   #b4bbc8;
   --text-faint:   #7c8596;
@@ -76,9 +73,7 @@ img, svg { display: block; max-width: 100%; }
   border-radius: 2px;
 }
 
-/* =========================================================
-   Background atmosphere
-   ========================================================= */
+
 
 .bg-noise,
 .bg-grid,
@@ -90,14 +85,12 @@ img, svg { display: block; max-width: 100%; }
   z-index: 0;
 }
 
-/* SVG noise grain — sutil */
 .bg-noise {
   opacity: 0.06;
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
 
-/* Faint technical grid */
 .bg-grid {
   opacity: 0.35;
   background-image:
@@ -108,7 +101,6 @@ img, svg { display: block; max-width: 100%; }
   -webkit-mask-image: radial-gradient(ellipse at top, #000 35%, transparent 80%);
 }
 
-/* Atmospheric cool glow */
 .bg-glow {
   background:
     radial-gradient(900px 520px at 18% -10%, rgba(124,140,255,0.18), transparent 60%),
@@ -116,12 +108,10 @@ img, svg { display: block; max-width: 100%; }
     radial-gradient(600px 400px at 50% 100%, rgba(34,211,238,0.06), transparent 70%);
 }
 
-/* Edge vignette */
 .bg-vignette {
   background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%);
 }
 
-/* Layout stacking */
 main, header, footer { position: relative; z-index: 1; }
 
 .container {
@@ -132,9 +122,9 @@ main, header, footer { position: relative; z-index: 1; }
   padding-right: 24px;
 }
 
-/* =========================================================
+/* 
    NAV
-   ========================================================= */
+   */
 
 .nav {
   position: sticky;
@@ -252,9 +242,9 @@ main, header, footer { position: relative; z-index: 1; }
 
 .lang-toggle__divider { color: var(--text-faint); }
 
-/* =========================================================
+/* 
    HERO
-   ========================================================= */
+    */
 
 .hero {
   padding: 100px 0 80px;
@@ -266,7 +256,6 @@ main, header, footer { position: relative; z-index: 1; }
   .hero { padding: 130px 0 110px; }
 }
 
-/* Ambient glow contained inside the hero */
 .hero::before {
   content: "";
   position: absolute;
@@ -869,17 +858,14 @@ main, header, footer { position: relative; z-index: 1; }
   gap: 12px;
 }
 
-.project-featured__corner {
+.project-featured::after {
+  content: "";
   position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 110px;
-  height: 110px;
-  border-left: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  border-bottom-left-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(124,140,255,0.18), transparent 60%);
+  inset: 0;
   pointer-events: none;
+  background:
+    radial-gradient(600px 200px at 80% 0%, rgba(124,140,255,0.12), transparent 70%);
+  opacity: 0.6;
 }
 
 /* =========================================================
@@ -1060,7 +1046,7 @@ main, header, footer { position: relative; z-index: 1; }
 .about__photo-frame {
   position: relative;
   width: 100%;
-  height: 130%;
+  height: 140%;
   border-radius: 50%;
   overflow: hidden;
   background: var(--surface);
@@ -1448,4 +1434,6 @@ main, header, footer { position: relative; z-index: 1; }
   }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
+
+  
 }
