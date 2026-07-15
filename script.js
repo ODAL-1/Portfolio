@@ -8,9 +8,9 @@
   const translations = {
     es: {
       // Meta
-      "meta.title": "Alan García · Junior Developer & IT Support Analyst",
+      "meta.title": "Alan García · IT Cybersecurity/Support Analyst & Junior Developer",
       "meta.description":
-        "Alan García — Junior Developer e IT Support Analyst en Montevideo. Construyendo soluciones a partir de problemas reales en entornos IT.",
+        "Alan García — IT Cybersecurity/Support Analyst & Junior Developer en Montevideo. Construyendo soluciones a partir de problemas reales en entornos IT.",
 
       // Nav
       "nav.projects": "Proyectos",
@@ -22,8 +22,8 @@
       // Hero
       "hero.eyebrow":
         "Montevideo, Uruguay · Open to remote / EU opportunities",
-      "hero.role1": "Junior Developer",
-      "hero.role2": "IT Support Analyst",
+      "hero.role1": "IT Cybersecurity/Support Analyst",
+      "hero.role2": "Junior Developer",
       "hero.desc":
         "Construyo aplicaciones web mantenibles con Angular, TypeScript y Node.js — pensadas para resolver problemas reales en entornos IT y escalar sin romperse.",
       "hero.cta1": "Explorar proyectos",
@@ -125,9 +125,9 @@
 
     en: {
       // Meta
-      "meta.title": "Alan García · Junior Developer & IT Support Analyst",
+      "meta.title": "Alan García · IT Cybersecurity/Support Analyst & Junior Developer",
       "meta.description":
-        "Alan García — Junior Developer & IT Support Analyst based in Montevideo. Building solutions from real problems in IT environments.",
+        "Alan García — IT Cybersecurity/Support Analyst & Junior Developer based in Montevideo. Building solutions from real problems in IT environments.",
 
       // Nav
       "nav.projects": "Projects",
@@ -139,8 +139,8 @@
       // Hero
       "hero.eyebrow":
         "Montevideo, Uruguay · Open to remote / EU opportunities",
-      "hero.role1": "Junior Developer",
-      "hero.role2": "IT Support Analyst",
+      "hero.role1": "IT Cybersecurity/Support Analyst",
+      "hero.role2": "Junior Developer",
       "hero.desc":
         "I build maintainable web apps with Angular, TypeScript and Node.js — designed to solve real problems in IT environments and scale without breaking.",
       "hero.cta1": "Explore projects",
@@ -420,37 +420,36 @@
     window.addEventListener("scroll", onScroll, { passive: true });
   }
 
-  // =========================================================
-  // Mobile nav toggle
-  // =========================================================
-  function initNavToggle() {
+  function initMobileNav() {
+    const nav = $(".nav");
     const toggle = $("#nav-toggle");
     const links = $("#nav-links");
-    if (!toggle || !links) return;
+    if (!nav || !toggle || !links) return;
 
-    const close = () => {
+    const closeMenu = () => {
+      nav.classList.remove("is-open");
       links.classList.remove("is-open");
-      toggle.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("nav-open");
-    };
-
-    const open = () => {
-      links.classList.add("is-open");
-      toggle.classList.add("is-open");
-      toggle.setAttribute("aria-expanded", "true");
-      document.body.classList.add("nav-open");
     };
 
     toggle.addEventListener("click", () => {
-      const isOpen = links.classList.contains("is-open");
-      isOpen ? close() : open();
+      const isOpen = nav.classList.contains("is-open");
+      nav.classList.toggle("is-open", !isOpen);
+      links.classList.toggle("is-open", !isOpen);
+      toggle.setAttribute("aria-expanded", String(!isOpen));
     });
 
-    $$("a", links).forEach((a) => a.addEventListener("click", close));
+    links.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
 
     window.addEventListener("resize", () => {
-      if (window.innerWidth >= 768) close();
+      if (window.innerWidth >= 768) closeMenu();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (window.innerWidth >= 768) return;
+      if (!nav.contains(event.target)) closeMenu();
     });
   }
 
@@ -467,7 +466,7 @@
   // =========================================================
   document.addEventListener("DOMContentLoaded", () => {
     initNav();
-    initNavToggle();
+    initMobileNav();
     setYear();
     initLangToggle();
     bindReveal($$(".reveal"));
