@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-label="Retrato — placeholder">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#1a2236"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0b0f14"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c8cff" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#7c8cff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7c8cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#7c8cff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <rect width="640" height="640" fill="url(#grid)"/>
+  <rect width="640" height="640" fill="url(#glow)"/>
+
+  <!-- decorative ring -->
+  <circle cx="320" cy="320" r="220" fill="none" stroke="url(#ring)" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.6"/>
+  <circle cx="320" cy="320" r="160" fill="none" stroke="#7c8cff" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- silhouette: shoulders + head -->
+  <g transform="translate(320 340)" opacity="0.92">
+    <path d="M -180 220 C -180 80, -90 30, 0 30 C 90 30, 180 80, 180 220 Z"
+          fill="#161e2c" stroke="#7c8cff" stroke-opacity="0.25" stroke-width="1.2"/>
+    <circle cx="0" cy="-50" r="78" fill="#1a2236" stroke="#a78bfa" stroke-opacity="0.35" stroke-width="1.2"/>
+  </g>
+
+  <!-- monogram -->
+  <text x="320" y="338" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="92" font-weight="500" fill="#e5e7eb" opacity="0.95"
+        letter-spacing="6">A.G</text>
+
+  <!-- caption -->
+  <text x="320" y="560" text-anchor="middle"
+        font-family="'JetBrains Mono', ui-monospace, monospace"
+        font-size="13" fill="#9ca3af" letter-spacing="4">PHOTO · PLACEHOLDER</text>
+</svg>
