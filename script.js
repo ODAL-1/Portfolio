@@ -421,6 +421,40 @@
   }
 
   // =========================================================
+  // Mobile nav toggle
+  // =========================================================
+  function initNavToggle() {
+    const toggle = $("#nav-toggle");
+    const links = $("#nav-links");
+    if (!toggle || !links) return;
+
+    const close = () => {
+      links.classList.remove("is-open");
+      toggle.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("nav-open");
+    };
+
+    const open = () => {
+      links.classList.add("is-open");
+      toggle.classList.add("is-open");
+      toggle.setAttribute("aria-expanded", "true");
+      document.body.classList.add("nav-open");
+    };
+
+    toggle.addEventListener("click", () => {
+      const isOpen = links.classList.contains("is-open");
+      isOpen ? close() : open();
+    });
+
+    $$("a", links).forEach((a) => a.addEventListener("click", close));
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 768) close();
+    });
+  }
+
+  // =========================================================
   // Footer year
   // =========================================================
   function setYear() {
@@ -433,6 +467,7 @@
   // =========================================================
   document.addEventListener("DOMContentLoaded", () => {
     initNav();
+    initNavToggle();
     setYear();
     initLangToggle();
     bindReveal($$(".reveal"));

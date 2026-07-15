@@ -7,14 +7,14 @@
     <meta
       name="description"
       data-i18n="meta.description"
-      content="Alan García — Junior Developer e IT Support Analyst en Montevideo. Construyendo soluciones a partir de problemas reales en entornos IT."
+      content="Alan García — Junior Developer e IT Cybersecurity & Support Analyst en Montevideo. Construyendo soluciones a partir de problemas reales en entornos IT."
     />
-    <title data-i18n="meta.title">Alan García · Junior Developer & IT Support Analyst</title>
+    <title data-i18n="meta.title">Alan García · IT Cybersecurity Analyst & Junior Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=UnifrakturCook:wght@700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -31,11 +31,11 @@
     <header class="nav">
       <div class="container nav__inner">
         <a href="#hero" class="nav__brand" aria-label="Alan García — Inicio">
-          <span class="nav__brand-mark" aria-hidden="true">A.G</span>
+          <span class="nav__brand-mark" aria-hidden="true">AG</span>
           <span class="nav__brand-name">Alan&nbsp;García</span>
         </a>
 
-        <nav class="nav__links" aria-label="Navegación principal">
+        <nav class="nav__links" aria-label="Navegación principal" id="nav-links">
           <a href="#projects" data-i18n="nav.projects">Proyectos</a>
           <a href="#about" data-i18n="nav.about">Sobre mí</a>
           <a href="#experience" data-i18n="nav.experience">Experiencia</a>
@@ -43,16 +43,29 @@
           <a href="#contact" data-i18n="nav.contact">Contacto</a>
         </nav>
 
-        <button
-          id="lang-toggle"
-          class="lang-toggle"
-          type="button"
-          aria-label="Cambiar idioma / Switch language"
-        >
-          <span class="lang-toggle__option" data-lang="es">ES</span>
-          <span class="lang-toggle__divider" aria-hidden="true">/</span>
-          <span class="lang-toggle__option" data-lang="en">EN</span>
-        </button>
+        <div class="nav__right">
+          <button
+            id="lang-toggle"
+            class="lang-toggle"
+            type="button"
+            aria-label="Cambiar idioma / Switch language"
+          >
+            <span class="lang-toggle__option" data-lang="es">ES</span>
+            <span class="lang-toggle__divider" aria-hidden="true">/</span>
+            <span class="lang-toggle__option" data-lang="en">EN</span>
+          </button>
+
+          <button
+            id="nav-toggle"
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -67,13 +80,13 @@
             </p>
 
             <h1 class="hero__title reveal">
-              <span class="hero__name"><span class="hero__name-cap">A</span>lan García</span>
+              <span class="hero__name">Alan García</span>
             </h1>
 
             <p class="hero__role reveal">
               <span data-i18n="hero.role1">Junior Developer</span>
               <span class="hero__sep" aria-hidden="true">·</span>
-              <span data-i18n="hero.role2">IT Support Analyst</span>
+              <span data-i18n="hero.role2">IT Support/Cybersecurity Analyst</span>
             </p>
 
             <p class="hero__desc reveal" data-i18n="hero.desc">
