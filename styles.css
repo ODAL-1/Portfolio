@@ -1176,15 +1176,8 @@ main, header, footer { position: relative; z-index: 1; }
 .projects-secondary {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 22px;
   margin-top: 32px;
-}
-
-@media (min-width: 768px) {
-  .projects-secondary {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-  }
 }
 
 .project-card {
