@@ -21,7 +21,7 @@
 
       // Hero
       "hero.eyebrow":
-        "Montevideo, Uruguay · Open to remote / EU opportunities",
+        "Montevideo, Uruguay · Abierto a remoto / oportunidades en la UE",
       "hero.role1": "IT Cybersecurity/Support Analyst",
       "hero.role2": "Junior Developer",
       "hero.desc":
@@ -61,21 +61,27 @@
       "projects.nv.desc":
         "Aplicación web desarrollada con Angular, enfocada en gestión interna, autenticación, consumo de APIs y arquitectura modular.",
       "projects.nv.demo": "Ver Demo",
+      "projects.nv.website": "Ver website",
       "projects.nv.frontend": "Frontend",
       "projects.nv.backend": "Backend",
+      "projects.mm.subtitle": "Desarrollo web para tienda de curaduría.",
+      "projects.mm.desc":
+        "Tienda online de ropa vintage y whimsigoth, con catálogo de piezas únicas, fichas de producto y carrito de compras.",
+      "projects.sigd.subtitle": "Proyecto de egreso - Bachiller tecnológico.",
 
       // About
       "about.title": "Sobre mí",
       "about.p1":
-        "Trabajé como Analista Help Desk L1 en Banco República (vía SONDA) y como Analista en Ciberseguridad, gestionando incidencias, Active Directory, soporte remoto y diagnóstico en entornos corporativos exigentes.",
+        "Soy profesional de IT con experiencia en soporte, ciberseguridad, desarrollo y DevOps. Trabajé en entornos corporativos dando soporte a usuarios, gestionando incidencias y sistemas, y también participé en proyectos de desarrollo web.",
       "about.p2":
-        "Hoy realizo una transición sólida hacia desarrollo web, con foco en Angular, TypeScript y la construcción de aplicaciones mantenibles. Vengo de IT Support: sé diagnosticar, comunicar técnico-funcional y resolver bajo presión.",
-      "about.p3":
-        "Busco roles junior donde combinar criterio técnico, disciplina operativa y aprendizaje continuo en producto real.",
+        "Actualmente trabajo en ciberseguridad y DevOps, con foco en infraestructura, automatización, CI/CD y monitoreo. Me interesa seguir creciendo en áreas donde pueda combinar desarrollo, infraestructura y seguridad, aprendiendo y resolviendo problemas reales.",
 
       // Experience
       "experience.title": "Experiencia",
       "exp.present": "presente",
+      "exp.ushift.role": "Especialista de Ciberseguridad y DevOps",
+      "exp.ushift.desc":
+        "Seguridad de la información e infraestructura, automatización de pipelines CI/CD y monitoreo de sistemas en entornos cloud.",
       "exp.nv.role": "Desarrollador AngularJS (Proyecto)",
       "exp.nv.desc":
         "Desarrollo y mantenimiento de aplicación web. Implementación de interfaces con Angular, consumo de APIs e integración con backend.",
@@ -179,21 +185,27 @@
       "projects.nv.desc":
         "Web application built with Angular, focused on internal management, authentication, API consumption and modular architecture.",
       "projects.nv.demo": "Live Demo",
+      "projects.nv.website": "View website",
       "projects.nv.frontend": "Frontend",
       "projects.nv.backend": "Backend",
+      "projects.mm.subtitle": "Web development for a curated fashion store.",
+      "projects.mm.desc":
+        "Online store for vintage and whimsigoth clothing, featuring a catalog of one-of-a-kind pieces, product pages and a shopping cart.",
+      "projects.sigd.subtitle": "Capstone project — Technological Baccalaureate.",
 
       // About
       "about.title": "About",
       "about.p1":
-        "I worked as a Help Desk L1 Analyst at Banco República (via SONDA) and as a Cybersecurity Analyst, handling incidents, Active Directory, remote support and diagnostics in demanding corporate environments.",
+        "I'm an IT professional with experience in support, cybersecurity, development and DevOps. I've worked in corporate environments providing user support, managing incidents and systems, and I've also taken part in web development projects.",
       "about.p2":
-        "Today I'm making a solid transition into web development, focused on Angular, TypeScript and building maintainable applications. I come from IT Support — I can diagnose, communicate across technical and business contexts, and deliver under pressure.",
-      "about.p3":
-        "I'm looking for junior roles where I can combine technical judgment, operational discipline and continuous learning on real product work.",
+        "I currently work in cybersecurity and DevOps, focused on infrastructure, automation, CI/CD and monitoring. I'm interested in continuing to grow in areas where I can combine development, infrastructure and security, learning and solving real problems.",
 
       // Experience
       "experience.title": "Experience",
       "exp.present": "present",
+      "exp.ushift.role": "Cybersecurity & DevOps Specialist",
+      "exp.ushift.desc":
+        "Information security and infrastructure, CI/CD pipeline automation and system monitoring in cloud environments.",
       "exp.nv.role": "AngularJS Developer (Project)",
       "exp.nv.desc":
         "Development and maintenance of a web application. Built UI with Angular and integrated with the backend layer.",
