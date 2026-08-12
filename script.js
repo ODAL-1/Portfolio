@@ -61,25 +61,27 @@
       "projects.nv.desc":
         "Aplicación web desarrollada con Angular, enfocada en gestión interna, autenticación, consumo de APIs y arquitectura modular.",
       "projects.nv.demo": "Ver Demo",
-      "projects.nv.website": "Ver website",
       "projects.nv.frontend": "Frontend",
       "projects.nv.backend": "Backend",
+      "projects.mm.website": "Ver website",
       "projects.mm.subtitle": "Desarrollo web para tienda de curaduría.",
       "projects.mm.desc":
         "Tienda online de ropa vintage y whimsigoth, con catálogo de piezas únicas, fichas de producto y carrito de compras.",
-      "projects.sigd.subtitle": "Proyecto de egreso - Bachiller tecnológico.",
+      "projects.sigd.subtitle": "Proyecto de egreso - Bachiller tecnológico",
+      "projects.sigd.desc":
+        "Sistema integral de gestión deportiva diseñado para centralizar información sobre múltiples disciplinas.",
 
       // About
       "about.title": "Sobre mí",
       "about.p1":
-        "Soy profesional de IT con experiencia en soporte, ciberseguridad, desarrollo y DevOps. Trabajé en entornos corporativos dando soporte a usuarios, gestionando incidencias y sistemas, y también participé en proyectos de desarrollo web.",
+        "Profesional de IT con experiencia en soporte, ciberseguridad, desarrollo y DevOps. Trabajé en entornos corporativos dando soporte a usuarios, gestionando incidencias y sistemas, y también participé en proyectos de desarrollo web.",
       "about.p2":
         "Actualmente trabajo en ciberseguridad y DevOps, con foco en infraestructura, automatización, CI/CD y monitoreo. Me interesa seguir creciendo en áreas donde pueda combinar desarrollo, infraestructura y seguridad, aprendiendo y resolviendo problemas reales.",
 
       // Experience
       "experience.title": "Experiencia",
       "exp.present": "presente",
-      "exp.ushift.role": "Especialista de Ciberseguridad y DevOps",
+      "exp.ushift.role": "Especialista en Ciberseguridad y DevOps",
       "exp.ushift.desc":
         "Seguridad de la información e infraestructura, automatización de pipelines CI/CD y monitoreo de sistemas en entornos cloud.",
       "exp.nv.role": "Desarrollador AngularJS (Proyecto)",
@@ -185,18 +187,20 @@
       "projects.nv.desc":
         "Web application built with Angular, focused on internal management, authentication, API consumption and modular architecture.",
       "projects.nv.demo": "Live Demo",
-      "projects.nv.website": "View website",
       "projects.nv.frontend": "Frontend",
       "projects.nv.backend": "Backend",
+      "projects.mm.website": "View website",
       "projects.mm.subtitle": "Web development for a curated fashion store.",
       "projects.mm.desc":
-        "Online store for vintage and whimsigoth clothing, featuring a catalog of one-of-a-kind pieces, product pages and a shopping cart.",
-      "projects.sigd.subtitle": "Capstone project — Technological Baccalaureate.",
+        "Online store for vintage and whimsigoth clothing, with a catalog of unique pieces, product pages and a shopping cart.",
+      "projects.sigd.subtitle": "Graduation project - Technical Baccalaureate",
+      "projects.sigd.desc":
+        "Comprehensive sports management system designed to centralize information across multiple disciplines.",
 
       // About
       "about.title": "About",
       "about.p1":
-        "I'm an IT professional with experience in support, cybersecurity, development and DevOps. I've worked in corporate environments providing user support, managing incidents and systems, and I've also taken part in web development projects.",
+        "IT professional with experience in support, cybersecurity, development and DevOps. I worked in corporate environments providing user support, managing incidents and systems, and also took part in web development projects.",
       "about.p2":
         "I currently work in cybersecurity and DevOps, focused on infrastructure, automation, CI/CD and monitoring. I'm interested in continuing to grow in areas where I can combine development, infrastructure and security, learning and solving real problems.",
 
@@ -205,7 +209,7 @@
       "exp.present": "present",
       "exp.ushift.role": "Cybersecurity & DevOps Specialist",
       "exp.ushift.desc":
-        "Information security and infrastructure, CI/CD pipeline automation and system monitoring in cloud environments.",
+        "Information security and infrastructure, CI/CD pipeline automation, and systems monitoring in cloud environments.",
       "exp.nv.role": "AngularJS Developer (Project)",
       "exp.nv.desc":
         "Development and maintenance of a web application. Built UI with Angular and integrated with the backend layer.",
