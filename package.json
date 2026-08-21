@@ -7,7 +7,7 @@
     "dev": "serve -l 3000 .",
     "start": "serve -l 3000 ."
   },
-  "devDependencies": {
+  "dependencies": {
     "serve": "^14.2.4"
   }
 }
